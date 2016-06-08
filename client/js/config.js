@@ -2,7 +2,7 @@ angular.module('nibs_ibeacon.config', [])
 
     .constant('SERVER_URL', null)
 
-    .constant('FB_APP_ID','916692588342928')
+    .constant('FB_APP_ID','1627928404195330')
 
     .constant('STATUS_LABELS', [
         'Forastero',
