@@ -82,7 +82,7 @@ function deleteItems(userId) {
  * @returns {*}
  */
 function getPointBalance(userId) {
-    return db.query('select sum(points__c::integer) as points from salesforce1.interaction__c where loyaltyid__c=$1', [userId], true);
+    return db.query('select sum(points__c::int) as points from salesforce1.interaction__c where loyaltyid__c=$1', [userId], true);
 }
 
 /**
