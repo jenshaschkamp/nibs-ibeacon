@@ -44,9 +44,9 @@ angular.module('nibs_ibeacon.profile', ['nibs_ibeacon.s3uploader', 'nibs_ibeacon
     .factory('Preference', function() {
 
         var preferences = [
-            { text: 'Dark', value: 'Dark' },
-            { text: 'Milk', value: 'Milk' },
-            { text: 'White', value: 'White' }
+            { text: 'Shop, Haustür', value: 'Abgabe im PaketShop, Zustellung an der Haustür' },
+            { text: 'Haustür', value: 'Abholung und Zustellung an der Haustür' },
+            { text: 'Shop2Shop', value: 'Abgabe und Zustellung im PaketShop (Shop2Shop)' }
         ];
 
         return {
