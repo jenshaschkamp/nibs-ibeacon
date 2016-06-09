@@ -25,7 +25,7 @@ org.authenticate({ username: userName, password: password}, function(err, resp) 
 
 function createCase(req, res, next) {
 
-    db.query('SELECT sfid FROM salesforce.contact WHERE id=$1',[req.userId], true)
+    db.query('SELECT sfid FROM salesforce1.contact WHERE id=$1',[req.userId], true)
         .then(function (user) {
             console.log("sfid: " + user.sfid);
             // case is a reserved word. using _case instead.
