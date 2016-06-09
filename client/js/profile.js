@@ -44,9 +44,9 @@ angular.module('nibs_ibeacon.profile', ['nibs_ibeacon.s3uploader', 'nibs_ibeacon
     .factory('Preference', function() {
 
         var preferences = [
-            { text: 'Shop, Haustür', value: 'Abgabe im PaketShop, Zustellung an der Haustür' },
-            { text: 'Haustür', value: 'Abholung und Zustellung an der Haustür' },
-            { text: 'Shop2Shop', value: 'Abgabe und Zustellung im PaketShop (Shop2Shop)' }
+            { text: 'Abgabe im PaketShop, Zustellung an der Haustür', value: 'PaketShop, Haustür' },
+            { text: 'Abholung und Zustellung an der Haustür', value: 'Haustür' },
+            { text: 'Abgabe und Zustellung im PaketShop (Shop2Shop)', value: 'Shop2Shop' }
         ];
 
         return {
@@ -59,10 +59,10 @@ angular.module('nibs_ibeacon.profile', ['nibs_ibeacon.s3uploader', 'nibs_ibeacon
     .factory('Size', function() {
 
         var sizes = [
-            { text: 'Small', value: 'Small' },
-            { text: 'Medium', value: 'Medium' },
-            { text: 'Large', value: 'Large' },
-            { text: 'X-Large', value: 'X-Large' }
+            { text: 'S-Paket', value: 'S-Paket' },
+            { text: 'M-Paket', value: 'M-Paket' },
+            { text: 'L-Paket', value: 'L-Paket' },
+            { text: 'XL-Paket', value: 'XL-Paket' }
         ];
 
         return {
